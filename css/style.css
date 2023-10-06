@@ -1,0 +1,55 @@
+:root {
+    --color-background: #C1BAB0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.page-1 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    mix-blend-mode: multiply;
+    background: var(--color-background);
+}
+
+.nav {
+    height: 82px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: 1px solid #222;
+}
+
+.nav-content {
+    font-size: 1.6rem;
+    font-weight: 100;
+    opacity: 0.8;
+    width: 30%;
+    letter-spacing: 0;
+}
+
+.nav .nav-img {
+    height: 2.16rem;
+    width: 30%;
+}
+
+.nav i {
+    width: 30%;
+    text-align: right;
+    font-size: 3rem;
+}
