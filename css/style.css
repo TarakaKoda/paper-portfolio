@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "domaine";
+    src: url(fonts/domaine/Domaine.woff2);
+}
+@font-face {
+    font-family: "canopee";
+    src: url(fonts/canopee/Canopee.woff2);
+}
+@font-face {
+    font-family: "editorial-new";
+    src: url(fonts/domaine/Domaine.woff2);
+}
+
 :root {
     --color-background: #C1BAB0;
 }
@@ -15,7 +28,12 @@ html {
 html, body {
     height: 100%;
     width: 100%;
+    font-family: "editorial-new",sans-serif;
+    letter-spacing: -1;
 }
+
+/* Page-1 
+   ========================================================================== */
 
 .page-1 {
     height: 100vh;
@@ -25,6 +43,8 @@ html, body {
     background: var(--color-background);
 }
 
+/* Nav Bar 
+   ========================================================================== */
 .nav {
     height: 82px;
     width: 100%;
@@ -52,4 +72,113 @@ html, body {
     width: 30%;
     text-align: right;
     font-size: 3rem;
+}
+
+/* Elements
+   ========================================================================== */
+.elements {
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 60px;
+}
+
+
+.element-project {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: self-start
+}
+
+.elements__image {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #726E68;
+}
+
+.elements__image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+.elements__image:hover img {
+    transform: scale(1.1);
+}
+
+.element-project .element-project__heading {
+    font-size: 2.7rem;
+    margin: 12px 0 20px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    font-family: "canopee";
+    
+}
+
+
+.element-project__heading span {
+    background-color: #B93C12;
+    color: #C1B5AB;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: 100;
+    margin-left: 5px;
+    position: relative;
+    top: -3px;
+    font-family: "canopee", sans-serif;
+}
+
+.element-project > p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #22211f;
+    opacity: 0.8;
+    max-width: 95%;
+    line-height: 1.5vw;
+    font-family: "domaine";
+    margin-top: -10px;
+}
+
+.element-2 {
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid #222;
+    border-left: 1px solid #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.element-2 h2 {
+    font-family: "canopee";
+    font-size: 60px;
+    font-weight: 50;
+    text-align: center;
+}
+
+
+.element-2__content {
+    font-family: "domaine";
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    color: #22211f;
+}
+
+.element-2__caption {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.element-2__caption span {
+    opacity: 0.8;
+    font-family: "domaine";
 }
