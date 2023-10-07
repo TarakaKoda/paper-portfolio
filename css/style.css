@@ -13,6 +13,7 @@
 
 :root {
     --color-background: #C1BAB0;
+    --color-image-border: #726E68;
 }
 
 * {
@@ -34,11 +35,16 @@ html, body {
 
 }
 
+.main {
+    background: #222;
+    overflow-x: center;
+}
+
 /* Page-1 
    ========================================================================== */
 
 .page-1 {
-    height: 134vh;
+    height: 115vh;
     width: 100vw;
     position: relative;
     background: var(--color-background);
@@ -55,7 +61,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 30px;
     border-bottom: 1px solid #222;
 }
 
@@ -91,14 +97,13 @@ html, body {
 
 .element-project {
     width: 30%;
-    height: 100%;
+    height: 40vh;
     display: flex;
     flex-direction: column;
-    align-items: self-start;
 }
 
 .elements__image {
-    height: 23vh;
+    height: 20vw;
     width: 100%;
     overflow: hidden;
     border: 2px solid #726E68;
@@ -116,15 +121,19 @@ html, body {
 }
 
 .element-project .element-project__heading {
-    font-size: 2.7rem;
+    font-size: 2vw;
     margin: 12px 0 20px;
     font-weight: 300;
     letter-spacing: -1px;
     font-family: "canopee"; 
 }
 
+.o-span {
+    font-family: domaine;
+}
 
-.element-project__heading span {
+
+.element-project__heading .heading-new {
     background-color: #B93C12;
     color: #C1B5AB;
     padding: 2px;
@@ -143,13 +152,13 @@ html, body {
     color: #22211f;
     opacity: 0.8;
     max-width: 95%;
-    font-family: "domaine";
+    font-family: domaine;
     margin-top: -10px;
 }
 
 .element-2 {
     width: 30%;
-    height: 100%;
+    height: 40vh;
     border-right: 1px solid #222;
     border-left: 1px solid #222;
     display: flex;
@@ -168,12 +177,13 @@ html, body {
 
 
 .element-2__content {
-    font-family: editorial-new;
+    font-family: "editorial-new";
     text-align: center;
     font-size: 3vw;
-    font-weight: 20;
+    font-weight: 100;
+    opacity: 0.9;
     color: #22211f;
-    line-height: 48px;
+    line-height: 4.8rem;
     position: relative;
     top: -18px
 }
@@ -190,8 +200,8 @@ html, body {
 
 /* Title
    ========================================================================== */
-.title {
-    height: 60vh;
+   .title {
+    height: 25vw;
     background: #1C1B19;
     width: 96%;
     position: relative;
@@ -203,8 +213,105 @@ html, body {
 .title h1 {
     font-family: "canopee";
     color: #C4BCB3;
-    font-size: 33vw;
-    padding: 6.4rem 5rem 4.3rem;
+    font-size: 21vw;
     letter-spacing: 0;
     font-weight: 100;
 }
+
+
+
+/* Page-2
+   ========================================================================== */
+
+.page-2 {
+    height: 150vh;
+    width: 100%;
+    background: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-2-left {
+    height: 100%;
+    width: 30%;
+    color: #1B1B19;
+}
+
+.page-2-left h2 {
+    font-size: 8.2vw;
+    font-family: canopee;
+    text-align: center;
+    letter-spacing: -5px;
+    font-weight: 400;
+    line-height: 140px;
+    margin: 10px 30px;
+    position: relative;
+}
+
+.page-2-left .artist {
+    font-size: 14vw;
+    letter-spacing: -8px;
+}
+
+.f-span {
+    font-family: domaine;
+}
+
+.page-2-left img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    margin: 10px 30px;
+    border: 1px solid #222;
+}
+
+.page-2-left p {
+    margin: 10px 30px 0;
+    font-family: "editorial-new";
+    font-size: 1.8vw;
+    line-height: 2.3vw;
+}
+
+.page-2-left p::first-letter {
+    font-family: canopee, sans-serif;
+    font-size: 7vw;
+    line-height: 5vw;
+    margin: .7vw 1vw 1vw 0;
+    float: left;
+    background: #1d1d1b;
+    color: #cdc6be;
+    letter-spacing: -4px;
+    padding: .75vw .4vw .5vw .4vw;
+}
+
+.page-2-right {
+    height: 100%;
+    width: 65%;
+    border-left: 1px solid #222;
+}
+
+.page-2-right .right__image {
+    height: 55%;
+    width: 95%;
+    margin: 0 40px;
+}
+
+.right__image img {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #222;
+}
+
+.page-2-right h2 {
+    margin: 40px 40px;
+    font-family: canopee, sans-serif;
+    font-size: 8.2vw;
+    line-height: 78px;
+    font-weight: 400;
+    color: #1B1B19;
+}
+
+
+
+
