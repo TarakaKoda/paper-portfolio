@@ -10,6 +10,10 @@
     font-family: "editorial-new";
     src: url(fonts/domaine/Domaine.woff2);
 }
+@font-face {
+    font-family: "germgoth";
+    src: url(fonts/germgoth/Germgoth.woff);
+}
 
 :root {
     --color-background: #C1BAB0;
@@ -316,22 +320,22 @@ html, body {
 /* website block
    ========================================================================== */
    
-   .website {
-       width: 100%;
-       height: 100%;
-       background: var(--color-background);
-       display: flex;
-       justify-content: space-evenly;
-       align-items: center;
-       padding: 40px;
-    }
+.website {
+    width: 100%;
+    height: 100%;
+    background: var(--color-background);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+}
     
-    .website .website__heading {
-        width: 75%;
-        height: 385px;
-        background: #1C1C1A;
-        margin-left: -40px;
-        display: flex;
+.website .website__heading {
+    width: 75%;
+    height: 385px;
+    background: #1C1C1A;
+    margin-left: -40px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -345,7 +349,7 @@ html, body {
     font-weight: 400;
 }
 
-/* website block
+/* all work page
    ========================================================================== */
    .all-work {
     display: grid;
@@ -460,7 +464,7 @@ html, body {
 .all-work-image img {
     width: 100%;
     height: 100%;
-    padding: 40px 50px;
+    padding: 40px 50px; 
 }
 
 .all-work-content {
@@ -529,4 +533,59 @@ html, body {
 
 .oval:hover h2 {
     transform: translateX(120%);
+}
+
+/* Awards block
+   ========================================================================== */
+.awards {
+    width: 100%;
+    height: 15vw;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.awards-container {
+    width: 95%;
+    height: 15vw;
+    background-color: var(--color-background);
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    font-family: editorial-new, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #1C1B19;
+}
+
+.award-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.award-content {
+    text-align: center;
+}
+
+.awards-container .award-init {
+    letter-spacing: 1px;
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 2vw;
+}
+
+.awards-container .award-title {
+    letter-spacing: -4.5px;
+    font-size: 5vw;
+    font-weight: 400;
+    font-family: canopee, sans-serif;
+}
+
+.awards-container .award-number {
+    font-size: 12vw;
+    margin-left: 10px;
+    font-family: germgoth, sans-serif;
+    font-weight: 300;
 }
