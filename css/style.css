@@ -592,25 +592,25 @@ html, body {
 
 /* artisan Block
    ========================================================================== */
-
-.artisan {
-    width: 100%;
-    height: 100%;
-    background: var(--color-background);
-}
-
-.artisan-top {
-    padding: 60px 40px;
-    width: 100%;
-    height: 50vw;
-    display: flex;
-    color: #1C1B19;
+   
+   .artisan {
+       width: 100%;
+       height: 100%;
+       background: var(--color-background);
+    }
+    
+    .artisan-top {
+        padding: 60px 40px;
+        width: 100%;
+        height: 50vw;
+        display: flex;
+        color: #1C1B19;
 }
 
 .artisan-top .the-pixel {
     height: 7vw;
     width: 80%;
-
+    
 }
 
 .the-image {
@@ -650,4 +650,145 @@ html, body {
     letter-spacing: -25px;
     margin-top: -152px;
     margin-left: -20px;
+}
+
+.artisan-middle {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+    margin-top: 20px;
+    color: #1C1B19;
+}
+
+.artisan-middle .f-span {
+    margin-right: 10px;
+}
+
+.artisan-middle img {
+    width: 27%;
+    height: 22vw;
+    object-fit: cover;
+    border: 1px solid #222;
+}
+
+.artisan-bottom {
+    display: flex;
+    margin-top: -100px;
+}
+
+.artisan-bottom .artisan-text-container {
+    background: #1C1C1A;
+    height: 22vw;
+    width: 65%;
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}   
+
+.artisan-bottom .artisan-title {
+    color: var(--color-background);
+    font-size: 24vw;
+    letter-spacing: -17px;
+    margin: 0;
+    padding: 10px 40px;
+}
+
+.artisan-bottom .artisan-content {
+    width: 35%;
+    margin-left: 10px;
+}
+
+.artisan-content p {
+    padding-right: 10px;
+    padding-top: 10px;
+    font-family: "editorial-new";
+    font-size: 2vw;
+    line-height: 2.5vw;
+    font-weight: 100;
+    color: #383734;
+}
+
+.artisan-content p:last-child {
+    margin-top: -30px;
+}
+
+.artisan-content h2 {
+    font-family: canopee, sans-serif;
+    font-size: 7.6vw;
+    letter-spacing: -5px;
+    font-weight: 400;
+    color: #1C1B19;
+}
+
+/* 8 Block
+   ========================================================================== */
+
+.testimonials {
+    height: 35vw;
+    background: var(--color-background);
+}
+
+.space {
+    padding: 80px 40px;
+}
+
+.testimonial-container {
+    height: 24vw;
+    width: 40vw;
+    border-radius: 0.8vw;
+    border: 2.5px solid #000;
+    box-shadow: -4px 4px 6px rgba(29,29,27,.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-content {
+    width: 100%;
+    height: 90%;
+    padding: 30px;
+    margin: 8px 10px;
+    background: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%23333' stroke-width='2.5' stroke-dasharray='11%2c11' stroke-dashoffset='30' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.testimonial-content .comment {
+    font-size: 2vw;
+    font-family: editorial-new, sans-serif;
+    font-weight: 100;
+    text-decoration: underline;
+    line-height: 3vw;
+}
+
+.media-object {
+    display: flex;
+    margin-top: 40px;
+}
+
+.media-object img {
+    height: 45px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+
+.media-object .details {
+    margin-left: 25px;
+    margin-top: -20px;
+}
+
+.details .testimonial-name {
+    letter-spacing: -2px;
+    font-size: 2.2vw;
+    font-family: canopee, sans-serif;
+    font-weight: 400;
+}
+
+.details .testimonial-occupation {
+    font-size: 1.7vw;
+    letter-spacing: -1px;
+    font-weight: 300;
+    font-family: editorial-new, sans-serif;
 }
