@@ -593,18 +593,18 @@ html, body {
 /* artisan Block
    ========================================================================== */
    
-   .artisan {
-       width: 100%;
-       height: 100%;
-       background: var(--color-background);
-    }
+.artisan {
+    width: 100%;
+    height: 100%;
+    background: var(--color-background);
+}
     
-    .artisan-top {
-        padding: 60px 40px;
-        width: 100%;
-        height: 50vw;
-        display: flex;
-        color: #1C1B19;
+.artisan-top {
+    padding: 60px 40px;
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    color: #1C1B19;
 }
 
 .artisan-top .the-pixel {
@@ -723,20 +723,21 @@ html, body {
     color: #1C1B19;
 }
 
-/* 8 Block
+/* testimonials Block
    ========================================================================== */
 
 .testimonials {
     height: 35vw;
     background: var(--color-background);
+    display: flex;
 }
 
 .space {
-    padding: 80px 40px;
+    padding: 80px 0; 
 }
 
 .testimonial-container {
-    height: 24vw;
+    height: 26vw;
     width: 40vw;
     border-radius: 0.8vw;
     border: 2.5px solid #000;
@@ -744,6 +745,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--color-background);
 }
 
 .testimonial-content {
@@ -780,7 +782,7 @@ html, body {
 }
 
 .details .testimonial-name {
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     font-size: 2.2vw;
     font-family: canopee, sans-serif;
     font-weight: 400;
@@ -791,4 +793,136 @@ html, body {
     letter-spacing: -1px;
     font-weight: 300;
     font-family: editorial-new, sans-serif;
+}
+
+.card-2 .media-object {
+    margin-top: 85px;
+}
+.card-4 .media-object {
+    margin-top: 85px;
+}
+
+.card-1 {
+    margin-left: 40px;
+    transition: transform 1s ease-in-out;
+}
+
+.card-2 {
+    transform: translateX(-55%); 
+    transition: transform 1s ease-in-out;   
+}
+
+.card-3 {
+    transform: translateX(-110%);
+    transition: transform 1s ease-in-out;  
+}
+
+.card-4 {
+    transform: translateX(-165%);
+}
+
+.testimonial-container:hover {
+    background: #B4AA9F;
+}
+
+@keyframes spin-card-2 {
+    10% {
+        transform: translateX(-5%);
+    }
+
+    30% {
+        transform: translateX(-55%);
+    }
+
+    50% {
+        transform: translateX(-55%);
+    }
+    
+    65%{
+        transform: translateX(-55%);
+    }
+
+    80% {
+        transform: translateX(-55%);
+    }
+    100% {
+        transform: translateX(-55%);
+    }
+
+}
+@keyframes spin-card-3 {
+    10% {
+        transform: translateX(-80%);
+    }
+
+    30% {
+        transform: translateX(-110%);
+    }
+
+    50% {
+        transform: translateX(-60%);
+    }
+
+    65% {
+        transform: translateX(-110%);
+    }
+
+    80% {
+        transform: translateX(-110%);
+    }
+
+    100% {
+        transform: translateX(-110%);
+    }
+
+}
+@keyframes spin-card-4 {
+    20% {
+        transform: translateX(-165%);
+    }
+    
+    30% {
+        transform: translateX(-165%);
+    }
+
+    50% {
+        transform: translateX(-135%);
+    }
+
+    65% {
+        transform: translateX(-165%);
+    }
+
+    80% {
+        transform: translateX(-115%);
+    }
+
+    100% {
+        transform: translateX(-165%);
+    }
+}
+
+.card-2-animation-spin {
+    animation-name: spin-card-2;
+    animation-duration: 30s;    
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction:normal;
+}
+.card-3-animation-spin {
+    animation-name: spin-card-3;
+    animation-duration: 30s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction:normal;
+}
+.card-4-animation-spin {
+    animation-name: spin-card-4;
+    animation-duration: 30s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction:normal;
 }
