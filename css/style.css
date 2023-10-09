@@ -337,10 +337,12 @@ html, body {
 .page-2-right h2 {
     margin: 4vw 2vw;
     font-family: canopee, sans-serif;
-    font-size: 8vw;
-    line-height: 5vw;
+    font-size: 9vw;
+    line-height: 4.8vw;
     font-weight: 400;
-    color: #1B1B19;
+    color: #1C1B19;
+    word-spacing: .5vw;
+    letter-spacing: -.3vw;
 }
 
 @media screen and (max-width: 900px) {
@@ -404,7 +406,7 @@ html, body {
 
 /* all work page
    ========================================================================== */
-   .all-work {
+.all-work {
     display: grid;
     grid-template-rows: 20vw auto;
     grid-template-columns: 27vw 37vw auto;
@@ -416,23 +418,23 @@ html, body {
 
 .upcoming-next {
     grid-area: upcoming-next;
-    padding: 0 40px;
+    padding: 0 2.5vw;
     border-right: 1px solid #1B1B19;
 }
 
 .upcoming-next .head-title {
-    margin-top: 10px;
+    margin-top: 1vw;
     font-family: editorial-new;
     font-size: 4vw;
     color: #1C1C1A;
     font-weight: 100;
-    letter-spacing: -4px;
-    word-spacing: 5px;
+    letter-spacing: -.3vw;
+    word-spacing: .5vw;
 }
 
 .head-desc-left {
-    letter-spacing: -1px;
-    margin-top: 10px;
+    letter-spacing: -.1vw;
+    margin-top: 1vw;
 }
 
 .head-desc-left h3 {
@@ -443,26 +445,26 @@ html, body {
 }
 
 .upcoming-next .element-2__caption {
-    margin-top: 20px;
+    margin-top: 2vw;
 }
 
 .unexpected-time {
     grid-area: unexpected-time;
-    padding: 0 40px;
+    padding: 0 4vw;
     border-right: 1px solid #222;
 }
 .unexpected-time .elements__image {
     height: 12vw;
-    width: 90%;
+    width: 28vw;
     overflow: hidden;
     border: 2px solid #726E68;
 }
 
 .unexpected-time .elements__image > img {
-    height: 100%;
-    width: 100%;
+    height: 12vw;
+    width: 28vw;
     object-fit: cover;
-    transition: scale ease 0.5s;
+    transition: all ease 0.5s;
 }
 
 .elements__image:hover img {
@@ -471,7 +473,7 @@ html, body {
 
 .unexpected-time .element-project__heading {
     font-size: 2vw;
-    margin: 12px 0 20px;
+    margin: 1.2vw 0 1vw;
     font-weight: 300;
     letter-spacing: -1px;
     font-family: "canopee"; 
@@ -481,8 +483,7 @@ html, body {
     font-size: 1.4vw;
     font-family: editorial-new, sans-serif;
     font-weight: 100;
-    line-height: 20px;
-    letter-spacing: 1px;
+    line-height: 1.4vw;
     opacity: 0.7;
     margin-top: -10px;
 }
@@ -496,7 +497,7 @@ html, body {
 .deliver .h-head {
     font-family: canopee, sans-serif;
     font-size: 7.6vw;
-    letter-spacing: -5px;
+    letter-spacing: -.3vw;
     font-weight: 400;
 }
 
@@ -504,7 +505,7 @@ html, body {
     font-family: canopee, sans-serif;
     font-size: 14vw;
     font-weight: 400;
-    letter-spacing: -10px;
+    letter-spacing: -0.5vw;
     margin-top: -3vw;
 }
 
@@ -515,9 +516,9 @@ html, body {
 }
 
 .all-work-image img {
-    width: 100%;
-    height: 100%;
-    padding: 40px 50px; 
+    width: 64vw;
+    height: 48vw;
+    padding: 4vw 2vw; 
 }
 
 .all-work-content {
@@ -526,7 +527,7 @@ html, body {
 }
 
 .all-work-content p {
-    margin: 10px 40px 0  50px;
+    margin: 1vw 4vw 0  4vw;
     font-family: "editorial-new";
     font-size: 2.25vw;
     line-height: 2.5vw;
@@ -546,17 +547,15 @@ html, body {
     float: left;
     background: #1d1d1b;
     color: #cdc6be;
-    letter-spacing: -4px;
     padding: .75vw .4vw .5vw .4vw;
 }
 
 .all-work-content .oval {
-    width: 80%;
+    width: 29vw;
     height: 13vw;
     border-radius: 50%;
-    margin: 40px 50px;
+    margin: 2vw 2vw 0 4vw;
     text-align: center;
-    margin-top: 25px;
     border: 1px solid #2222227e;
     background: #C3BBB2;
     display: flex;
@@ -565,9 +564,12 @@ html, body {
     overflow: hidden;
 }
 
+
 .oval img {
-    transform: translateX(-120%);
-    transition: translateX .30s .50s ease-in-out;
+    width: 10vw;
+    height: 4vw;
+    transform: translateX(-120vw);
+    transition: all .30s .50s ease-in-out;
 }
 
 .oval h2 {
@@ -575,17 +577,17 @@ html, body {
     color: #1C1B19;
     font-size: 6vw;
     font-weight: 400;
-    letter-spacing: -2px;
-    transform: translateX(-18%);
-    transition: translateX .30s 0.50s ease-in-out;
+    letter-spacing: -.2vw;
+    transform: translateX(-4vw);
+    transition: all .30s 0.50s ease-in-out;
 }
 
 .oval:hover img{
-    transform: translateX(120%);
+    transform: translateX(8vw);
 }
 
 .oval:hover h2 {
-    transform: translateX(120%);
+    transform: translateX(20vw);
 }
 
 /* Awards block
@@ -852,21 +854,21 @@ html, body {
 .card-2 .media-object {
     margin-top: 5.5vw;
 }
-.card-4 .media-object {
+/* .card-4 .media-object {
     margin-top: 5.5vw;
-}
+} */
 
 .card-1 {
-    margin-left: 40px;
+    margin-left: 4vw;
     transition: background-color .3s ease-in-out;
 }
 
-.card-2 {
-    transform: translateX(-55%); 
-    transition: background-color .3s ease-in-out;   
+ .card-2 {
+    /* transform: translateX(-55%); 
+    transition: background-color .3s ease-in-out;    */
 }
 
-.card-3 {
+/* .card-3 {
     transform: translateX(-110%);
     transition: background-color .3s ease-in-out;  
 }
@@ -883,7 +885,7 @@ html, body {
 
 .card-3:hover, .card-2:hover, .card-4:hover {
     animation: none;
-}
+}  */
 
 @keyframes spin-card-2 {
     10% {
@@ -961,7 +963,7 @@ html, body {
         transform: translateX(-165%);
     }
 }
-
+/* 
 .card-2-animation-spin {
     animation-name: spin-card-2;
     animation-duration: 30s;    
@@ -985,4 +987,4 @@ html, body {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-direction:normal;
-}
+} */
